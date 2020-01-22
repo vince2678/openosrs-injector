@@ -78,10 +78,4 @@ publishing {
             url = uri("$buildDir/repo")
         }
     }
-    publications {
-        register("mavenJava", MavenPublication::class) {
-            from(components["java"])
-            artifact(sourcesJar.get())
-        }
-    }
 }
